@@ -1,0 +1,413 @@
+@-webkit-keyframes rotate {
+  from{
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+to{
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+}
+@-moz-keyframes rotate {
+  from{
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+to{
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+}
+@-o-keyframes rotate {
+  from{
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+to{
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+}
+@keyframes rotate {
+  from{
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+to{
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+}
+
+
+body{
+   max-width: 1200px;
+   min-width: 600px;
+   font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+   font-size: 15px;
+}
+header{
+    width: 110%;
+    height: 103px;
+    background: url(../img/header.png) no-repeat 25% -4%,
+                url(../img/header-right.png) repeat;
+}
+
+
+h1{
+    color: #fff;
+    font-size: 20px;
+}
+.header-menu-wraper {
+    width: 77%;
+    height: auto;
+    max-height: 1000px;
+    position: relative;
+}
+#loading.loading-active {
+    display: block;
+    position: fixed;
+    top: 350px;
+    left: 560px;
+    font-size: 35px;
+    color: rgb(0, 70, 140);
+    display: block;
+    opacity: 0.6;
+    z-index: 6;
+    animation-name: rotate;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+
+}
+#loading.active{
+    display: block;
+    position: fixed;
+    top: 350px;
+    left: 560px;
+    font-size: 35px;
+    color: rgb(0, 70, 140);
+    display: block;
+    opacity: 0.6;
+    z-index: 6;
+    animation-name: rotate;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+}
+
+#loading{
+    display: none;
+}
+
+.company-selector{
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #fff;
+    margin-left: 32px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 70px;
+}
+.company-selector:hover{
+    text-decoration: underline;
+}
+.up-button{
+    position: fixed;
+    height: 50px;
+    width: 86px;
+    top: 50%;
+    left: -20px;
+    font-size: 37px;
+    z-index: 7;
+    color: #00468C;
+    padding-left: 36px;
+    cursor: pointer;
+}
+.up-button:hover{
+    opacity: 0.6;
+}
+.down-button{
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.menu-button:hover{
+    color: #90A4B7;
+}
+.selection{ 
+    display: none;
+}
+.selection-active{ 
+    display: block;
+    width: 100%;
+    min-height: 800px;
+    background-color: #B7D9FF;
+    position: absolute;
+    z-index: 11;
+}
+.company-filter-container{
+    padding: 0px;
+    width: auto;
+    height: auto;
+    display: inline-block;
+}
+.erase-search-button{
+    margin-left: -21px;
+    font-size: 25px;
+    cursor: pointer;
+    display: inline-block;
+}
+.close-button{
+    display: inline-block;
+    float: right;
+    margin: 30px 154px 0px 0px;
+    font-size: 37px;
+    cursor: pointer;
+} 
+.company-layout{
+    display: inline-block;
+    height: auto;
+    width: 1000px;
+    margin: 70px 0px 0px 150px;
+}
+input[type="text"].filter, input[type="text"].filter1{
+    margin: 44px 0px 0px 150px;
+    background-color: rgb(183, 217, 255);
+    border-radius: 0px;
+    width: 335px;
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px #337AB7 solid;
+    background-image: none;
+}
+.selection:after{
+    content: '';
+    clear: both;
+}
+
+.list-item i:hover{
+   color: #fff;
+   cursor: pointer;
+
+}
+.list{
+   display: none;
+   -moz-user-select: none;
+   -khtml-user-select: none;
+   user-select: none;
+}
+.list i{
+   font-style: normal;
+}
+.active-list-item{
+    background-color: #BABABA;
+    border: 1px #fff solid;
+    border-radius: 26px;
+}
+input[type="text"]{
+	margin: 0px 0px 20px;
+    background-image: url("../img/filter.png");
+    background-position: 96% 43%;
+    background-size: 10px 10px;
+    background-repeat: no-repeat;
+    width: 190px;
+    border: 1px solid #3462C0;
+    height: 26px;
+    width: 235px;
+    border-radius: 8px;
+    color: #E90800;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0px 31px 0px 13px;
+}
+input[type="text"].filter2{
+    position: absolute;
+    right: 0;
+    top: 70px;
+}
+
+.general-content{
+    position: relative;
+    display: inline-block;
+    height: auto;
+    min-height:700px;
+    width: 100%;
+    margin:  0px 0px 0px 0px;
+}
+tr.visible-table-row{
+    display: table-row !important;
+}
+.users-base {
+    font-family: "Lucida Sans Unicode","Lucida Grande",sans-serif;
+    font-size: 14px;
+    width: auto;
+    min-width: 500px;
+    text-align: left;
+    border-collapse: collapse;
+    color: #3E4347;
+}
+.users-base a {
+    color: #8B8E91;
+}
+.users-base a:hover {
+    color: #00468C;
+    text-decoration: underline;
+}
+.users-base th:first-child, .users-base td:first-child {
+    color: #00468C;
+    border-left: none;
+    text-align: left;
+
+}
+tr.table-company-name td{
+    text-align: center !important;
+}
+tr.table-company-name{
+    display: table-row !important;
+}
+
+.users-base .refresh-button{
+    font-size: 20px;
+    color: rgb(0, 70, 140);
+    cursor: pointer;
+}
+.refresh-button-active{
+    animation-name: rotate;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+}
+
+.users-base th:first-child{
+    padding-left: 11px;
+}
+
+.users-base th {
+    font-weight: normal;
+    text-align: center;
+    border-bottom: 2px solid #A8C7E6;
+    border-left: 20px solid white;
+    padding: 8px 10px;
+}
+.users-base td {
+    text-align: center;
+    padding: 12px 10px;
+    color: #8b8e91;
+}
+.division-container {
+    display: none;
+    top: 103px;
+    left: 40px;
+    position: absolute;
+    padding: 2px 35px 2px 20px;
+    background-color: rgb(0, 70, 140);
+    color: rgb(255, 255, 255);
+    border: 1px solid white;
+    border-radius: 10px;
+    height: auto;
+    width: auto;
+    z-index: 10;
+    opacity: 0.9;
+    display: none;
+}
+.division-container ul{
+    list-style: none;
+}
+.division-item:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.commonTH {}
+.divisionTH {
+    display: none;
+    cursor: pointer;
+}
+.divisionTH:hover{
+    text-decoration: underline;
+}
+
+
+
+.testBut{
+    position: fixed;
+    visibility: hidden;
+    top: 50%;
+    left: 50%;
+    display: block;
+    height: 200px;
+    width: 500px;
+    background-color: red;
+    z-index: 999999999999;
+}
+
+
+
+
+
+
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 916px) {
+
+   header{
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    width: 110%;
+   }
+   .users-base {
+    min-width: 400px;
+    width: auto;
+   }
+   .header-menu-wraper {
+    width: 100%;
+   }
+
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
