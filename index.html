@@ -14,6 +14,10 @@
       <link rel="stylesheet" type="text/css" href="libs/bootsrtap-grid/bootstrap-grid-3.3.1.min.css">
 </head>
 <body>
+  <div class="header-line"></div>
+   <div class="container">
+      <div class="row">
+      <div class="col-md-12">
       <header>
             <div class="fixed-header"><!-- !!!!! -->
                   <div class="up-button"><i class="fa fa-long-arrow-up"></i>
@@ -23,9 +27,6 @@
             <a class="company-selector">Выберите компанию</a>
             <input type="text" class="filter2" value="" name="liveFilter2" placeholder="Поиск">
             </div>
-
-            <div id="loading"><i class="fa fa-spinner"></i></div>
-
       </header> 
 
       <nav></nav>
@@ -35,6 +36,7 @@
                      <input type="text" class="filter" value="" placeholder="Введите название компании">
                      <a class="erase-search-button"><i class="fa fa-eraser"></i>
                      </a>
+                     <div class="company-background"></div>
                   </div>    
                      <a class="close-button"><i class="fa fa-times"></i>
                      </a>
@@ -57,6 +59,7 @@
       <article class="general-content container">
          <div class="row">
             <div class="col-md-1"></div>
+            <div id="loading"><i class="fa fa-spinner"></i></div>
             <table  cellspacing="0" class="users-base col-md-10">
                   <tr class="table-company-name">
                         <td class='table-header'colspan="3"><span class="commonTH">Сотрудники GAZ Group</span><span class="divisionTH">Выберите подразделение</span></td>
@@ -69,7 +72,10 @@
             </table>
             <div class="col-md-1"></div>
           </div>
+          </div>
+   </div>
       </article>
+   </div>
 
    <!--[if lt IE 9]>
       <script src="libs/html5shiv/es5-shim.min.js"></script>

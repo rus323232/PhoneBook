@@ -65,16 +65,21 @@ to{
 
 
 body{
-   max-width: 1200px;
-   min-width: 600px;
    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
    font-size: 15px;
+}
+.header-line {
+    position: absolute;
+    top: 0;
+    height: 103px;
+    width: 100%;
+    background-color: #00468c;
+    z-index: -3;
 }
 header{
     width: 110%;
     height: 103px;
-    background: url(../img/header.png) no-repeat 25% -4%,
-                url(../img/header-right.png) repeat;
+    background: url(../img/header.png) no-repeat 25% -4%,#00468c;
 }
 
 
@@ -83,16 +88,16 @@ h1{
     font-size: 20px;
 }
 .header-menu-wraper {
-    width: 77%;
+    width: 100%;
     height: auto;
     max-height: 1000px;
-    position: relative;
+    padding: 0px 38px 0px 38px;
 }
 #loading.loading-active {
     display: block;
     position: fixed;
-    top: 350px;
-    left: 560px;
+    top: 50%;
+    left: 50%;
     font-size: 35px;
     color: rgb(0, 70, 140);
     display: block;
@@ -177,6 +182,15 @@ h1{
     height: auto;
     display: inline-block;
 }
+.company-background {
+    position: absolute;
+    height: 100%;
+    width: 163.25%;
+    background: #b7d9ff;
+    z-index: -6;
+    top: 0;
+    left: -385px;
+}
 .erase-search-button{
     margin-left: -21px;
     font-size: 25px;
@@ -249,7 +263,7 @@ input[type="text"]{
 }
 input[type="text"].filter2{
     position: absolute;
-    right: 0;
+    right: 100px;
     top: 70px;
 }
 
